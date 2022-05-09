@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.base-animation {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition-duration: 0.4s;
+}
+
+@layer components {
+    .btn {
+        @apply px-4 py-2.5 text-sm font-semibold rounded-xl focus:ring-2 focus:ring-offset-2
+        focus:outline-none hover:bg-opacity-70 base-animation;
+    }
+
+    .input {
+        @apply w-full px-3 py-2 mt-1 text-gray-700 bg-gray-100 border-0 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 base-animation;
+    }
+
+    .name-heading {
+        @apply hover:bg-indigo-100 w-full border border-transparent rounded-lg whitespace-pre overflow-hidden text-ellipsis cursor-pointer text-xl px-3 py-1.5 font-bold text-indigo-500;
+    }
+
+    .name-input {
+        @apply absolute inset-0 w-full text-xl px-3 py-1.5 font-bold rounded-lg placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-700;
+    }
+}
