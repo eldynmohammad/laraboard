@@ -23375,11 +23375,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _headlessui_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @headlessui/vue */ "./node_modules/@headlessui/vue/dist/headlessui.esm.js");
-/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/DotsHorizontalIcon.js");
-/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/PencilIcon.js");
+/* harmony import */ var _headlessui_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @headlessui/vue */ "./node_modules/@headlessui/vue/dist/headlessui.esm.js");
+/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/DotsHorizontalIcon.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _CardListItemCreateForm_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardListItemCreateForm.vue */ "./resources/js/Pages/Boards/CardListItemCreateForm.vue");
+/* harmony import */ var _CardListItem_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardListItem.vue */ "./resources/js/Pages/Boards/CardListItem.vue");
+/* harmony import */ var _CardListItemCreateForm_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardListItemCreateForm.vue */ "./resources/js/Pages/Boards/CardListItemCreateForm.vue");
+
 
 
 
@@ -23407,14 +23408,14 @@ __webpack_require__.r(__webpack_exports__);
       props: props,
       listRef: listRef,
       onCardCreated: onCardCreated,
-      Menu: _headlessui_vue__WEBPACK_IMPORTED_MODULE_2__.Menu,
-      MenuButton: _headlessui_vue__WEBPACK_IMPORTED_MODULE_2__.MenuButton,
-      MenuItem: _headlessui_vue__WEBPACK_IMPORTED_MODULE_2__.MenuItem,
-      MenuItems: _headlessui_vue__WEBPACK_IMPORTED_MODULE_2__.MenuItems,
-      DotsHorizontalIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__["default"],
-      PencilIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__["default"],
+      Menu: _headlessui_vue__WEBPACK_IMPORTED_MODULE_3__.Menu,
+      MenuButton: _headlessui_vue__WEBPACK_IMPORTED_MODULE_3__.MenuButton,
+      MenuItem: _headlessui_vue__WEBPACK_IMPORTED_MODULE_3__.MenuItem,
+      MenuItems: _headlessui_vue__WEBPACK_IMPORTED_MODULE_3__.MenuItems,
+      DotsHorizontalIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__["default"],
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
-      CardListItemCreateForm: _CardListItemCreateForm_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+      CardListItem: _CardListItem_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+      CardListItemCreateForm: _CardListItemCreateForm_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23538,6 +23539,114 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/PencilIcon.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    card: {
+      type: Object,
+      "default": function _default() {
+        return {};
+      }
+    }
+  },
+  setup: function setup(__props, _ref) {
+    var expose = _ref.expose;
+    expose();
+    var props = __props;
+    var inputTitleRef = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)();
+    var isShowingForm = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(false);
+    var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+      title: props.card.title
+    });
+
+    function focusText() {
+      inputTitleRef.value.focus();
+    }
+
+    function showForm() {
+      return _showForm.apply(this, arguments);
+    }
+
+    function _showForm() {
+      _showForm = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                isShowingForm.value = true;
+                _context.next = 3;
+                return (0,vue__WEBPACK_IMPORTED_MODULE_2__.nextTick)();
+
+              case 3:
+                focusText();
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+      return _showForm.apply(this, arguments);
+    }
+
+    function onSubmit() {
+      form.put(route('cards.update', {
+        card: props.card.id
+      }), {
+        onSuccess: function onSuccess() {
+          isShowingForm.value = false;
+        }
+      });
+    }
+
+    var __returned__ = {
+      props: props,
+      inputTitleRef: inputTitleRef,
+      isShowingForm: isShowingForm,
+      form: form,
+      focusText: focusText,
+      showForm: showForm,
+      onSubmit: onSubmit,
+      PencilIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__["default"],
+      useForm: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.useForm,
+      nextTick: vue__WEBPACK_IMPORTED_MODULE_2__.nextTick,
+      ref: vue__WEBPACK_IMPORTED_MODULE_2__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=script&setup=true&lang=js":
 /*!*****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=script&setup=true&lang=js ***!
@@ -23578,7 +23687,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         emit = _ref.emit;
     expose();
     var props = __props;
-    var inputNameRef = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)();
+    var inputTitleRef = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)();
     var isShowingForm = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(false);
     var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.useForm)({
       title: '',
@@ -23587,7 +23696,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     });
 
     function focusText() {
-      inputNameRef.value.focus();
+      inputTitleRef.value.focus();
     }
 
     function showForm() {
@@ -23630,7 +23739,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var __returned__ = {
       props: props,
       emit: emit,
-      inputNameRef: inputNameRef,
+      inputTitleRef: inputTitleRef,
       isShowingForm: isShowingForm,
       form: form,
       focusText: focusText,
@@ -27016,9 +27125,6 @@ var _hoisted_5 = {
   "class": "space-y-3"
 };
 var _hoisted_6 = {
-  "class": "hidden absolute top-1 right-1 w-6 h-6 group-hover:grid place-content-center text-gray-600 hover:bg-gray-300 hover:text-gray-800 rounded-md"
-};
-var _hoisted_7 = {
   "class": "px-3 mt-3"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -27099,19 +27205,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.list.cards, function (card) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CardListItem"], {
       key: card.id,
-      "class": "relative bg-white p-3 border-b border-gray-300 rounded-lg hover:bg-gray-100 group text-sm"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(card.title) + " ", 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["PencilIcon"], {
-      "class": "w-4 h-4"
-    })])]);
+      card: card
+    }, null, 8
+    /* PROPS */
+    , ["card"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CardListItemCreateForm"], {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CardListItemCreateForm"], {
     list: $props.list,
     onCreated: $setup.onCardCreated
   }, null, 8
@@ -27192,6 +27296,82 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec":
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "relative bg-white p-2 border-b border-gray-300 rounded-lg hover:bg-gray-100 group text-sm"
+};
+var _hoisted_2 = ["onSubmit"];
+var _hoisted_3 = ["onKeydown"];
+var _hoisted_4 = {
+  "class": "mt-2 space-x-2"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  type: "submit",
+  "class": "btn bg-indigo-500 text-white"
+}, " Save card ", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  href: "#"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_1, [$setup.isShowingForm ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("form", {
+    key: 0,
+    onKeydown: _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withKeys)(function ($event) {
+      return $setup.isShowingForm = false;
+    }, ["esc"])),
+    onSubmit: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)($setup.onSubmit, ["prevent"])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+    ref: "inputTitleRef",
+    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+      return $setup.form.title = $event;
+    }),
+    rows: "3",
+    placeholder: "insert card title",
+    "class": "input bg-white text-sm",
+    onKeydown: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withKeys)((0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)($setup.onSubmit, ["prevent"]), ["enter"])
+  }, null, 40
+  /* PROPS, HYDRATE_EVENTS */
+  , _hoisted_3), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.title]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "btn text-gray-700 hover:bg-gray-300",
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $setup.isShowingForm = false;
+    })
+  }, " Cancel ")])], 40
+  /* PROPS, HYDRATE_EVENTS */
+  , _hoisted_2)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 1
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.props.card.title), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "hidden absolute top-1.5 right-1.5 w-6 h-6 group-hover:grid place-content-center text-gray-600 hover:bg-gray-300 hover:text-gray-800 rounded-md",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $setup.showForm();
+    })
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["PencilIcon"], {
+    "class": "w-4 h-4"
+  })])], 64
+  /* STABLE_FRAGMENT */
+  ))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=template&id=2f55368a":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=template&id=2f55368a ***!
@@ -27232,7 +27412,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, ["esc"])),
     onSubmit: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)($setup.onSubmit, ["prevent"])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
-    ref: "inputNameRef",
+    ref: "inputTitleRef",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $setup.form.title = $event;
     }),
@@ -54623,6 +54803,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Boards/CardListItem.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Boards/CardListItem.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CardListItem_vue_vue_type_template_id_838c05ec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardListItem.vue?vue&type=template&id=838c05ec */ "./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec");
+/* harmony import */ var _CardListItem_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardListItem.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _opt_lampp_htdocs_laraboard_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_opt_lampp_htdocs_laraboard_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CardListItem_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CardListItem_vue_vue_type_template_id_838c05ec__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Boards/CardListItem.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Boards/CardListItemCreateForm.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/Pages/Boards/CardListItemCreateForm.vue ***!
@@ -55434,6 +55642,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardListItem_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardListItem_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CardListItem.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=script&setup=true&lang=js":
 /*!*************************************************************************************************!*\
   !*** ./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=script&setup=true&lang=js ***!
@@ -56170,6 +56394,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardListItem_vue_vue_type_template_id_838c05ec__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardListItem_vue_vue_type_template_id_838c05ec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CardListItem.vue?vue&type=template&id=838c05ec */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Boards/CardListItem.vue?vue&type=template&id=838c05ec");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=template&id=2f55368a":
 /*!********************************************************************************************!*\
   !*** ./resources/js/Pages/Boards/CardListItemCreateForm.vue?vue&type=template&id=2f55368a ***!
@@ -56594,6 +56834,7 @@ var map = {
 	"./Boards/BoardsShow.vue": "./resources/js/Pages/Boards/BoardsShow.vue",
 	"./Boards/CardList.vue": "./resources/js/Pages/Boards/CardList.vue",
 	"./Boards/CardListCreateForm.vue": "./resources/js/Pages/Boards/CardListCreateForm.vue",
+	"./Boards/CardListItem.vue": "./resources/js/Pages/Boards/CardListItem.vue",
 	"./Boards/CardListItemCreateForm.vue": "./resources/js/Pages/Boards/CardListItemCreateForm.vue",
 	"./PrivacyPolicy.vue": "./resources/js/Pages/PrivacyPolicy.vue",
 	"./Profile/Partials/DeleteUserForm.vue": "./resources/js/Pages/Profile/Partials/DeleteUserForm.vue",

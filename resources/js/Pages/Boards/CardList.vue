@@ -1,7 +1,8 @@
 <script setup>
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
-import { DotsHorizontalIcon, PencilIcon } from '@heroicons/vue/solid';
+import { DotsHorizontalIcon } from '@heroicons/vue/solid';
 import { ref } from 'vue';
+import CardListItem from './CardListItem.vue';
 import CardListItemCreateForm from './CardListItemCreateForm.vue';
 
 const props = defineProps({
@@ -77,21 +78,11 @@ function onCardCreated() {
                 class="px-3 flex-1 overflow-y-auto"
             >
                 <ul class="space-y-3">
-                    <li
+                    <CardListItem
                         v-for="card in list.cards"
                         :key="card.id"
-                        class="relative bg-white p-3 border-b border-gray-300
-                                        rounded-lg hover:bg-gray-100 group text-sm"
-                    >
-                        {{ card.title }}
-                        <button
-                            class="hidden absolute top-1 right-1 w-6 h-6
-                                            group-hover:grid place-content-center text-gray-600
-                                            hover:bg-gray-300 hover:text-gray-800 rounded-md"
-                        >
-                            <PencilIcon class="w-4 h-4" />
-                        </button>
-                    </li>
+                        :card="card"
+                    />
                 </ul>
             </div>
 

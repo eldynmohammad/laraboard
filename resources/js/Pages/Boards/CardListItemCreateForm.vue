@@ -14,7 +14,7 @@ const props = defineProps({
 
 const emit = defineEmits(['created']);
 
-const inputNameRef = ref();
+const inputTitleRef = ref();
 const isShowingForm = ref(false);
 const form = useForm({
     title: '',
@@ -23,7 +23,7 @@ const form = useForm({
 });
 
 function focusText() {
-    inputNameRef.value.focus();
+    inputTitleRef.value.focus();
 }
 
 async function showForm() {
@@ -50,7 +50,7 @@ function onSubmit() {
         @submit.prevent="onSubmit"
     >
         <textarea
-            ref="inputNameRef"
+            ref="inputTitleRef"
             v-model="form.title"
             rows="3"
             placeholder="insert card title"

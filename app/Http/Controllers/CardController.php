@@ -48,7 +48,15 @@ class CardController extends Controller
 
     public function update(UpdateCardRequest $request, Card $card)
     {
-        //
+        request()->validate([
+            'title' => ['required'],
+        ]);
+
+        $card->update([
+            'title' => request('title')
+        ]);
+
+        return redirect()->back();
     }
 
     public function destroy(Card $card)
